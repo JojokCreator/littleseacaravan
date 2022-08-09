@@ -2,14 +2,14 @@ import React from 'react'
 import Image from 'next/image';
 import { sliderData } from './SliderData';
 
-const Photos = () => {
+const Photos = ({ mainImage, header, image1, image2, image3, image4 }) => {
   return (
     <div className="max-w-[1240px] mx-auto py-16 text-center">
-        <h1 className="font-bold text-2xl p-4">Stay Photos</h1>
+        <h1 className="font-bold text-2xl p-4">{header}</h1>
         <div className="grid grid-rows-none md:grid-cols-5 p-4 md:gap-4">
         <div className="w-full h-full col-span-2 md:col-span-3 row-span-2">
             <Image 
-                src="/page.jpg" 
+                src={mainImage}
                 alt='/'
                 layout="responsive"
                 width="677px"
@@ -18,7 +18,7 @@ const Photos = () => {
         </div>
         <div className='w-full h-full'>
         <Image 
-                src="/275732175_241467038113189_8935177250275147484_n 2.jpg" 
+                src={image1}
                 alt='/'
                 layout="responsive"
                 width="215px"
@@ -28,7 +28,7 @@ const Photos = () => {
         </div>
         <div className='w-full h-full'>
         <Image 
-                src="/275551190_843788480352029_6462475543474946434_n.jpg" 
+                src={image2}
                 alt='/'
                 layout="responsive"
                 width="215px"
@@ -38,7 +38,7 @@ const Photos = () => {
         </div>
         <div className='w-full h-full'>
         <Image 
-                src="/277979504_667783274489354_4614835511071287641_n.jpg" 
+                src={image3}
                 alt='/'
                 layout="responsive"
                 width="215px"
@@ -48,7 +48,7 @@ const Photos = () => {
         </div>
         <div className='w-full h-full'>
         <Image 
-                src="/278111153_1048985652629691_6184023553561585616_n.jpg" 
+                src={image4}
                 alt='/'
                 layout="responsive"
                 width="215px"
