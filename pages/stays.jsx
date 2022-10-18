@@ -1,6 +1,7 @@
 import React from "react";
 import Hero from "../components/Hero";
 import Photos from "../components/Photos";
+import Link from "next/link";
 
 const Stays = () => {
 	return (
@@ -47,6 +48,9 @@ const Stays = () => {
 				image3={"/activity_thumb.jpg"}
 				image4={"/278111153_1048985652629691_6184023553561585616_n.jpg"}
 			/>
+			<h1 className="float-right mr-4 uppercase text-bold">Site by <Link href="https://jklakus.live">
+          <a>J.Klakus</a>
+					</Link></h1>
 		</div>
 	);
 };
