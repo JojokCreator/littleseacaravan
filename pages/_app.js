@@ -6,7 +6,7 @@ import Seo from "../components/Seo";
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <script data-goatcounter="https://littleseacaravan.goatcounter.com/count"
+      <script data-goatcounter="https://littlesea.goatcounter.com/count"
         async src="//gc.zgo.at/count.js">
       </script>
       <Seo />
