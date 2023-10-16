@@ -4,7 +4,7 @@ const nextConfig = {
   swcMinify: true,
   experimental: {
     images: {
-      unoptimized: true,
+      unoptimized: false,
     },
   },
 };
